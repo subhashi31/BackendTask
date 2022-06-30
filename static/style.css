@@ -1,0 +1,76 @@
+body{
+    background-color: #afa8de4a;
+}
+
+nav h2{
+    color: #522ba2;
+    font-style: italic;
+}
+
+.largebox{
+    height: 650px;
+    background: url("bg.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 2%;
+}
+
+.fbox{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn{
+    margin: 25px;
+    padding: 8px;
+    border-radius: 5px;
+    width: 110px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#b1{
+    background: blue;
+    border: 2px solid blue;
+}
+
+#b2{
+    background-color: red;
+    border: 2px solid red;
+}
+
+.usertab{
+    display: block;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 60%;
+    height: 420px;
+    /* scroll */
+    overflow-y: auto;
+    background-color: white;
+}
+
+.users{
+    display: flex;
+    justify-content: space-between;
+}
+
+.usertab h3{
+    width: 30%;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.small{
+    font-size: small;
+}

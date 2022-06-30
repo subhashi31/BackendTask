@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+            background: radial-gradient(white, rgb(19, 13, 19));
+            height: 730px;
+            align-items: center;
+            justify-content: center;
+        }
+        .addform{
+            width: 30%;
+            height: 25%;
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        #formbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 25px;
+        }
+
+        form input{
+            padding: 6px;
+            margin: 6px;
+            text-align: center;
+        }
+
+        #b1{
+            background-color: rgb(48, 46, 46);
+            border: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Add New User</h2>
+    <div class="addform">
+        <form id="formbox" action="/add" method="POST">
+            <input type="text" placeholder="UserId eg. 10" name="userid">
+            <input type="text" placeholder="UserName eg. Harry Styles" name="username">
+            <input type="email" placeholder="Email eg. harry@gmail.com" name="email">
+            <button type="submit" class="btn" id="b1">Add</button>
+        </form>
+    </div>
+</body>
+</html>

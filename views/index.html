@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>TaskZigy</title>
+</head>
+<body>
+    <nav>
+        <h2>TaskZigy</h2>
+    </nav>
+    <div class="largebox">
+        <div class="fbox">
+            <a class="btn" id="b1" href="/add">Add User</a>
+            <a class="btn" id="b2" href="/delete">Delete User</a>
+            
+        </div>
+
+        <div class="usertab">
+
+            <div class="users underline">
+                <h3>UserId</h3>
+                <h3>UserName</h3>
+                <h3>Email</h3>
+            </div>
+             <% users.forEach(user => {  %>
+                <div class="users small" >
+                    <h3>
+                        <%= user.userid %>
+                    </h3>
+                    <h3>
+                        <%= user.username %>
+                    </h3>
+                    <h3>
+                        <%= user.email %>
+                    </h3>
+                </div>
+
+             <% }) %>
+
+           
+            
+        </div>
+    </div>
+</body>
+</html>
